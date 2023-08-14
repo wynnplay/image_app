@@ -38,3 +38,21 @@ if uploaded_file is not None:
         st.image(output, caption='배경 제거 이미지', use_column_width=True)
 
 
+if option =='글자추출': 
+    image = st.file_uploader(labkel = 'Uplead your image here", type=['png,'jpg', 'jpeg'])
+    @st.cache
+    def laod_model():
+        reader = ocr.Reader(['ko','en'],model_storage_directory='-')
+        return reader 
+
+    reder = load_model() 
+
+    if image is not None: 
+        input_image = Image.open(image) 
+        st.image(input_image) 
+
+        with st.spinner("AI is at work!"): 
+        
+    
+
+
