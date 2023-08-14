@@ -20,9 +20,15 @@ image-comparison(
     make-responsive=True, 
     in_memory=True)  
     
-st.markdown('### :arrow_forward: :ab:글자 추출(OCR) - `easyocr`')  
+st.markdown("### :arrow_forward: :ab:글자 추출(OCR) - `easyocr`")  
 
-uploaded_file = st.file_uploader("이미지를 업로드하세요", type=['png', 'jpg', 'jpeg'])
+option = st.selectbox(
+    '어떤 서비스를 원하시나요?',
+    ('배경제거','글자추출')) 
+
+st.info(f'당신의 선택은: {option}')
+if option == '배경제거': 
+    uploaded_file = st.file_uploader("이미지를 업로드하세요", type=['png', 'jpg', 'jpeg'])
 
 if uploaded_file is not None:
     input = Image.open(uploaded_file)
