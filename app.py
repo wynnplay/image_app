@@ -12,7 +12,7 @@ st.markdown('### : arrow_forward::sunglasses: Remove Background - `rmbg`'
 st.markdown('#### sample result') 
 
 image-comparison(
-    img1 = "https://   ", 
+    img1 = "https://raw.githubusercontent.com/wynnplay/image_app/main/woman.jpeg", 
     img2 = "https://   ",
     label1 = "원본 이미지", 
     label2 = '배경제거 이미지", 
