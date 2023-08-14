@@ -32,6 +32,9 @@ if option == '배경제거':
 
 if uploaded_file is not None:
     input = Image.open(uploaded_file)
-    st.image(input, caption='원본 이미지', use_column_width=True)
-    output = remove(input) 
-    st.image(output, caption='배경 제거 이미지', use_column_width=True)
+    st.image(input_, caption='원본 이미지', use_column_width=True)
+    with st.spinner("열심히 작업 중 ......"): 
+        output = remove(input_) 
+        st.image(output, caption='배경 제거 이미지', use_column_width=True)
+
+
