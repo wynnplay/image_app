@@ -2,7 +2,7 @@ import streamlit as st
 from rembg import remove
 from PIL import Image
 
-from streamlit-image-comparison import image-comparison
+from streamlit_image_comparison import image_comparison
 import easyocr as ocr #ocr
 import numpy as np  
 
