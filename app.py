@@ -13,7 +13,7 @@ st.markdown('#### sample result')
 
 image-comparison(
     img1 = "https://raw.githubusercontent.com/wynnplay/image_app/main/woman.jpeg", 
-    img2 = "https://   ",
+    img2 = "https://raw.githubusercontent.com/wynnplay/image_app/main/woman_rmbg.png",
     label1 = "원본 이미지", 
     label2 = '배경제거 이미지", 
     show_labels = True, 
